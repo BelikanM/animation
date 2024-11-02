@@ -1,12 +1,14 @@
 
+// src/App.js
+
 import React from 'react';
-import Animation3DComponent from './Animation3DComponent';
+import CartoonVideoGenerator from './CartoonVideoGenerator';
 
 function App() {
   return (
     <div>
-      <h1>Créateur de Films en 3D</h1>
-      <Animation3DComponent />
+      <h1>Création de Vidéos Dessin Animé</h1>
+      <CartoonVideoGenerator />
     </div>
   );
 }

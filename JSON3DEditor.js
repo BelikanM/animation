@@ -1,8 +1,9 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
+import Objet from './Objet'; // Assurez-vous que ce fichier est créé
 
 function Scene({ config, textures }) {
   useFrame(() => {
@@ -29,10 +30,7 @@ function Scene({ config, textures }) {
   return (
     <>
       {config.objects.map((obj, index) => (
-        <mesh key={index} position={obj.position} rotation={obj.rotation}>
-          <boxGeometry args={obj.size} />
-          <meshStandardMaterial map={textures[index]} color={obj.color} />
-        </mesh>
+        <Objet key={index} obj={obj} texture={textures[index]} />
       ))}
     </>
   );

@@ -1,14 +1,12 @@
 
-// src/App.js
-
 import React from 'react';
-import CartoonVideoGenerator from './CartoonVideoGenerator';
+import JSON3DEditor from './JSON3DEditor';
 
 function App() {
   return (
-    <div>
-      <h1>Création de Vidéos Dessin Animé</h1>
-      <CartoonVideoGenerator />
+    <div className="App">
+      <h1>Éditeur 3D JSON</h1>
+      <JSON3DEditor />
     </div>
   );
 }
